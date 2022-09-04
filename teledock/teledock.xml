@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>teledock</Name>
+  <Repository>https://github.com/MrMarble/teledock</Repository>
+  <Registry>https://hub.docker.com/r/mrmarble/teledock</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/MrMarble/teledock</Project>
+  <Overview>Teledock: A simple telegram bot that allows a telegram's user to control a docker service.</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/MrMarble/teledock/master/assets/teledcock.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1662300695</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="TELEDOCK_TOKEN" Target="TELEDOCK_TOKEN" Default="123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11" Mode="" Description="Telegram Bot Token" Type="Variable" Display="always" Required="true" Mask="true">123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11</Config>
+  <Config Name="TELEDOCK_SUPERADMINS" Target="TELEDOCK_SUPERADMINS" Default="tg_userid" Mode="" Description=" Comma separated list of Telegram user ids, only users listed here will have access to the bot." Type="Variable" Display="always" Required="true" Mask="false">tg_userid</Config>
+  <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Docker Socket" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
+</Container>
