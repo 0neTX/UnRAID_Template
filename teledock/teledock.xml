@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>teledock</Name>
-  <Repository>https://github.com/MrMarble/teledock</Repository>
+  <Repository>mrmarble/teledock</Repository>
   <Registry>https://hub.docker.com/r/mrmarble/teledock</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -10,14 +10,14 @@
   <Support/>
   <Project>https://github.com/MrMarble/teledock</Project>
   <Overview>Teledock: A simple telegram bot that allows a telegram's user to control a docker service.</Overview>
-  <Category/>
+  <Category>Tools: Status:Beta</Category>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/MrMarble/teledock/master/assets/teledcock.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1662300695</DateInstalled>
+  <DateInstalled>1662301601</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
