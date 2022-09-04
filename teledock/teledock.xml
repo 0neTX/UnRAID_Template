@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/127999-support-onetx-template-support-thread/</Support>
   <Project>https://github.com/MrMarble/teledock</Project>
   <Overview>Teledock: A simple telegram bot that allows a telegram's user to control a docker service.</Overview>
   <Category>Tools: Status:Beta</Category>
@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1662301601</DateInstalled>
+  <DateInstalled>1662302440</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
