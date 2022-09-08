@@ -1,11 +1,3 @@
-Hola a todos!
-
-Acabo de publicar mi primera plantilla en Unraid.
-
-
-
-
-
 # Teledock
 
 <img src="https://github.com/MrMarble/teledock/raw/master/assets/teledcock.png" width="180">
