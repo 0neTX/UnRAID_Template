@@ -1,8 +1,25 @@
+Hola a todos!
+
+Acabo de publicar mi primera plantilla en Unraid.
+
+
+
+
+
 # Teledock
 
 <img src="https://github.com/MrMarble/teledock/raw/master/assets/teledcock.png" width="180">
 
-**Teledock**: A simple telegram bot that allows a telegram's user to control a docker service.
+**[Teledock](https://github.com/MrMarble/teledock)**: A simple telegram bot that allows a telegram's user to control a docker service.
+
+## Features
+
+- [x] List containers
+- [x] Start / Stop containers
+- [x] Inspect containers
+- [x] List stacks
+- [x] See logs
+- [x] List images
 
 ## Running it
 
