@@ -38,12 +38,17 @@
 - `TELEDOCK_TOKEN`: Telegram token. See https://core.telegram.org/bots
 - `TELEDOCK_SUPERADMINS`: Comma separated list of Telegram user ids, only users listed here will have access to the bot.
 
+![](container_config.png)
+
 * Open the chat with your bot!
 
 And enjoy it!
 
 
-![](container_config.png)
+
+
+## Unraid Support Forum:
+- [https://forums.unraid.net/topic/127999-support-onetx-template-support-thread/](https://forums.unraid.net/topic/127999-support-onetx-template-support-thread/)
 
 ## License
 
