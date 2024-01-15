@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>bw-export</Name>
+  <Repository>0netx/bw-export</Repository>
+  <Registry>https://hub.docker.com/r/0netx/bw-export</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/127999-support-onetx-teledock-bot-docker-control-template-support</Support>
+  <Project>https://github.com/0neTX/Bitwarden_Export</Project>
+  <Overview>Bitwarden Export to Backup&#xD;
+&#xD;
+Bash docker image that exports your Bitwarden vault contents&#xD;
+Features&#xD;
+&#xD;
+This simple bash docker image uses the Bitwarden CLI to perform three backup tasks:&#xD;
+&#xD;
+    export personal vault&#xD;
+    export organization vault (if applicable)&#xD;
+    export file attachments (if applicable)&#xD;
+&#xD;
+The docker image provides the choice of creating unencrypted export files or password-encrypted export files. Attachments are not encrypted.</Overview>
+  <Category>Backup:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/dani-garcia/vaultwarden/main/resources/vaultwarden-icon.svg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1705340841</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="OUTPUT_PATH" Target="/var/data" Default="/mnt/user/appdata/bw-export" Mode="rw" Description="Path to save exported vault" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bw-export</Config>
+  <Config Name="ATTACHMENTS_PATH" Target="/var/attachments" Default="/mnt/user/appdata/bw-export" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bw-export</Config>
+  <Config Name="BW_URL_SERVER" Target="BW_URL_SERVER" Default="" Mode="" Description="OPTIONAL: If you have your own Bitwarden or Vaulwarden server, set in the environment variable BW_URL_SERVER its url address." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="BW_CLIENTID" Target="BW_CLIENTID" Default="" Mode="" Description="Your Bitwarden Personal API Key can be obtain in: https://bitwarden.com/help/personal-api-key/" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="BW_CLIENTSECRET" Target="BW_CLIENTSECRET" Default="" Mode="" Description="Your Bitwarden Personal API Key can be obtain in: https://bitwarden.com/help/personal-api-key/" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="BW_PASSWORD" Target="BW_PASSWORD" Default="" Mode="" Description="Bitwarden Vault Password" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="BW_ORGANIZATIONS_LIST" Target="BW_ORGANIZATIONS_LIST" Default="" Mode="" Description="OPTIONAL:  Set one or more organizations separated by comma. &#13;&#10;To obtain your organization_id value, open a terminal and type:bw login #(follow the prompts); bw list organizations | jq -r '.[0] | .id'&#13;&#10;&#13;&#10;Example: cada13d7-5418-37ed-981b-be822121c593,cada13d7-5418-37ed-981b-be82219879878979,cada13d7-5418-37ed-981b-be822121c5435&#13;&#10;&#13;&#10;If empty, the container export a backup of ALL Organizations in vault" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="EXPORT_PASSWORD" Target="EXPORT_PASSWORD" Default="" Mode="" Description="The password used to encrypt the exporte vault." Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="OUTPUT_PATH_VOLUME" Target="/var/data" Default="/mnt/user/appdata/bw-export" Mode="rw" Description="Path to save exported vault" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/bw-export</Config>
+  <Config Name="ATTACHMENTS_PATH_VOLUME" Target="/var/attachments" Default="/mnt/user/appdata/bw-export" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/bw-export</Config>
+</Container>
