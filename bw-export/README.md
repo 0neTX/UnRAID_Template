@@ -7,7 +7,7 @@
 ## Features
 
 - [x] Export personal vault
-- [x] Export organization vault (if applicable)
+- [x] Export all organizations in vault (if applicable)
 - [x] Export file attachments (if applicable)
 
 The docker image provides the choice of creating unencrypted export files or password-encrypted export files. Attachments are not encrypted.
@@ -31,7 +31,7 @@ You must report the following variables so that the container can authenticate i
 - `BW_CLIENTID`:  It's `client_id` variable from your account
 - `BW_CLIENTSECRET`:  It's `client_secret` variable from your account
 - `BW_PASSWORD`:  Your Bitwarden/Vaultwarden password.
-- `EXPORT_PASSWORD`:  Encryption password you have chosen for exporting then vault.
+- `EXPORT_PASSWORD`:  Encryption password you have chosen for exporting then vault. if you choose to use password-encryption to store your export files (recommended) be sure that you use a strong and memorable password! (don't just store it inside Bitwarden, because if you get locked out of your account you won't be able to restore your exports)
 
 **OPTIONALS VARIABLES:**
 
