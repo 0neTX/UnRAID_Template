@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>bw-export</Name>
+  <Name>bitwarden-export</Name>
   <Repository>0netx/bw-export</Repository>
   <Registry>https://hub.docker.com/r/0netx/bw-export</Registry>
   <Network>bridge</Network>
@@ -24,16 +24,14 @@ The docker image provides the choice of creating unencrypted export files or pas
   <Category>Backup:</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/dani-garcia/vaultwarden/main/resources/vaultwarden-icon.svg</Icon>
+  <Icon>https://github.com/0neTX/UnRAID_Template/blob/main/bw-export/icon.png?raw=true</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1705340841</DateInstalled>
+  <DateInstalled>1705427633</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="OUTPUT_PATH" Target="/var/data" Default="/mnt/user/appdata/bw-export" Mode="rw" Description="Path to save exported vault" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bw-export</Config>
-  <Config Name="ATTACHMENTS_PATH" Target="/var/attachments" Default="/mnt/user/appdata/bw-export" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bw-export</Config>
   <Config Name="BW_URL_SERVER" Target="BW_URL_SERVER" Default="" Mode="" Description="OPTIONAL: If you have your own Bitwarden or Vaulwarden server, set in the environment variable BW_URL_SERVER its url address." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="BW_CLIENTID" Target="BW_CLIENTID" Default="" Mode="" Description="Your Bitwarden Personal API Key can be obtain in: https://bitwarden.com/help/personal-api-key/" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="BW_CLIENTSECRET" Target="BW_CLIENTSECRET" Default="" Mode="" Description="Your Bitwarden Personal API Key can be obtain in: https://bitwarden.com/help/personal-api-key/" Type="Variable" Display="always" Required="true" Mask="true"></Config>
